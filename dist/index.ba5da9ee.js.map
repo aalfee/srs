@@ -1,0 +1,1 @@
+{"mappings":"AAAA,SAAS;IACL,OAAO,QAAQ,CAAC,IAAI,GAAG;AAC3B","sources":["js/script1.js"],"sourcesContent":["function myFunction(){\n    window.location.href = 'new-page.html';\n}"],"names":[],"version":3,"file":"index.ba5da9ee.js.map","sourceRoot":"/__parcel_source_root/"}

@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #af62c6;
+}
+
+.header2 {
+    text-align: center;
+    padding: 10px;
+    background-color: #af62c66d;
+    margin-top: 30px;
+    margin-bottom: 40px; /* Set a longer margin at the bottom */
+}
+
+.white-text{
+    color: white;
+}
+
+#scene-container {
+    position: absolute;
+    top: 0;
+    left: 99%;
+    width: 38%;
+    height: 100%;
+    background-color: #af62c66d; 
+}
