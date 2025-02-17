@@ -1,12 +1,18 @@
 
 import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
-import * as dat from 'dat.gui';
-import {OBJLoader} from 'three/examples/jsm/loaders/OBJLoader';
-import OrthographicView from '/images/OrthographicView.jpg';
-import Wall_A from '/images/Wall_A.jpeg';
-import Wall_B from '/images/Wall_B.jpeg';
-import Wall_C from '/images/Wall_C.jpeg';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+//import * as dat from 'dat.gui';
+import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
+//import OrthographicView from '/images/OrthographicView.jpg';
+//import Wall_A from '/images/Wall_A.jpeg';
+//import Wall_B from '/images/Wall_B.jpeg';
+//import Wall_C from '/images/Wall_C.jpeg';
+
+const OrthographicView = '/images/OrthographicView.jpg';
+const Wall_A = '/images/Wall_A.jpeg';
+const Wall_B = '/images/Wall_B.jpeg';
+const Wall_C = '/images/Wall_C.jpeg';
+
 
 const renderer = new THREE.WebGL1Renderer(); 
 
@@ -37,7 +43,7 @@ const ambientLight = new THREE.AmbientLight(0xff00ff);
 scene.add(ambientLight);
 
 const spotLight = new THREE.SpotLight(0xffffff, 10000);                // 10,000 intensity 
-spotLight.position.set(-100, 100, 0);
+spotLight.position.set(100, 100, -100);
 spotLight.castShadow = true;
 scene.add(spotLight);
 
