@@ -1,6 +1,7 @@
+  // Training model using TensorFlow 
    // Step 1: Prepare Data
-   const xs = tf.tensor1d([1, 2, 3, 4]);   //Test 3: white and black [unsuccessful] Test 4: Roman Numeral Converter values[unsuccessful]
-   const ys = tf.tensor1d([2, 4, 6, 8]);    //Test1 Label(y=2x)[successful], Test2 Label(y=3x) [successful], Test3 Label(hexCode for complementary colors)
+   const xs = tf.tensor1d([0, 1, 2]);   //Test 3: white and black [unsuccessful] Test 4: Roman Numeral Converter values[unsuccessful]
+   const ys = tf.tensor1d([25, 27, 31]);    //Test1 Label(y=2x)[successful], Test2 Label(y=3x) [successful], Test3 Label(hexCode for complementary colors)
    //Result from test 1 = (input: 1, result 2.0151596069335938)
    // Step 2: Define Model
    const model = tf.sequential();
@@ -31,7 +32,7 @@ Add all the values together.
      console.log('Training started...');
 
      await model.fit(xs, ys, {
-       epochs: 100,
+       epochs: 500,
        callbacks: {
          onEpochEnd: (epoch, logs) => {
            console.log(`Epoch ${epoch}: loss = ${logs.loss}`);
